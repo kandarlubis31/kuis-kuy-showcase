@@ -13,6 +13,18 @@
 
 ---
 
+## 📸 Tampilan
+
+### Desktop
+
+![Kuis-Kuy — layar pembuka, tampilan desktop](screenshots/desktop.png)
+
+### Mobile
+
+![Kuis-Kuy — layar pembuka, tampilan mobile](screenshots/mobile.png)
+
+---
+
 ## ❌ Masalahnya
 
 - Survey itu **membosankan** → response rate rendah, data yang masuk sedikit
