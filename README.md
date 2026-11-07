@@ -57,11 +57,11 @@ Survey platform **multi-tenant bertema RPG 8-bit** — pixel art, chiptune BGM, 
 
 ```mermaid
 flowchart LR
- B[" Browser<br/>Next.js 16 App Router + Tailwind v4<br/>pixel UI + chiptune player"]
- SA[" Server Actions<br/>auth · CRUD · import/export<br/>ownership check · rate limit"]
- DB[(" Supabase PostgreSQL<br/>7 tabel · RLS 19 policies<br/>RPC get_question_aggregates")]
- B --> SA --> DB
- B -.->|"anon key + RLS"| DB
+    B[" Browser<br/>Next.js 16 App Router + Tailwind v4<br/>pixel UI + chiptune player"]
+    SA[" Server Actions<br/>auth · CRUD · import/export<br/>ownership check · rate limit"]
+    DB[(" Supabase PostgreSQL<br/>7 tabel · RLS 19 policies<br/>RPC get_question_aggregates")]
+    B --> SA --> DB
+    B -.->|"anon key + RLS"| DB
 ```
 
 ### Security (berlapis)
