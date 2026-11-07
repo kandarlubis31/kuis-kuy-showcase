@@ -1,4 +1,4 @@
-# 🎮 Kuis-Kuy — Survey Platform Tematik RPG
+# Kuis-Kuy — Survey Platform Tematik RPG
 
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📸 Tampilan
+## Tampilan
 
 ### Desktop
 
@@ -25,46 +25,46 @@
 
 ---
 
-## ❌ Masalahnya
+## Masalahnya
 
 - Survey itu **membosankan** → response rate rendah, data yang masuk sedikit
 - Platform survey populer mahal & kaku, tidak ada yang menghibur responden
 - Bagi pembuat survey: mengelola pertanyaan, hasil, dan ekspor biasanya butuh beberapa tool terpisah
 
-## ✅ Kuis-Kuy
+## Kuis-Kuy
 
 Survey platform **multi-tenant bertema RPG 8-bit** — pixel art, chiptune BGM, quest board, HP bar, dialogue box. Pembuat survey jadi "Guild Master", responden jadi "Adventurer" yang menyelesaikan quest.
 
-### ✨ Fitur
+### Fitur
 
 **Untuk responden**
-- 🗺️ **Quest Board** — daftar survey aktif seperti papan quest RPG
-- 🎭 **Dialogue box** — pertanyaan tampil seperti percakapan NPC; rating 1–5 berbentuk diamond, pilihan gaya menu RPG
-- 🎵 **Chiptune BGM** — 6 track, autoplay, tersimpan preferensinya
-- 📊 **Hasil publik** — statistik agregat real-time (Bar/Pie/Trend chart)
-- 🌗 Dark/light mode, autosave draft, responsif mobile
+- **Quest Board** — daftar survey aktif seperti papan quest RPG
+- **Dialogue box** — pertanyaan tampil seperti percakapan NPC; rating 1–5 berbentuk diamond, pilihan gaya menu RPG
+- **Chiptune BGM** — 6 track, autoplay, tersimpan preferensinya
+- **Hasil publik** — statistik agregat real-time (Bar/Pie/Trend chart)
+- Dark/light mode, autosave draft, responsif mobile
 
 **Untuk pembuat survey**
-- 🛠️ **Builder drag-and-drop** — tambah/edit/hapus/reorder pertanyaan
-- 📥 **Import JSON/CSV/Excel** + template unduhan
-- 👤 **Multi-tenant** — akun user + kepemilikan survey (edit/hapus/toggle milik sendiri)
-- 📤 **Export CSV** (BOM-encoded, aman dibuka Excel)
-- 🧑‍💼 **Admin dashboard** — statistik kartu, pagination, panel laporan, badge jumlah report
+- **Builder drag-and-drop** — tambah/edit/hapus/reorder pertanyaan
+- **Import JSON/CSV/Excel** + template unduhan
+- **Multi-tenant** — akun user + kepemilikan survey (edit/hapus/toggle milik sendiri)
+- **Export CSV** (BOM-encoded, aman dibuka Excel)
+- **Admin dashboard** — statistik kartu, pagination, panel laporan, badge jumlah report
 
 ---
 
-## 🏗️ Arsitektur
+## Arsitektur
 
 ```mermaid
 flowchart LR
-    B["🖥️ Browser<br/>Next.js 16 App Router + Tailwind v4<br/>pixel UI + chiptune player"]
-    SA["⚙️ Server Actions<br/>auth · CRUD · import/export<br/>ownership check · rate limit"]
-    DB[("🐘 Supabase PostgreSQL<br/>7 tabel · RLS 19 policies<br/>RPC get_question_aggregates")]
+    B[" Browser<br/>Next.js 16 App Router + Tailwind v4<br/>pixel UI + chiptune player"]
+    SA[" Server Actions<br/>auth · CRUD · import/export<br/>ownership check · rate limit"]
+    DB[(" Supabase PostgreSQL<br/>7 tabel · RLS 19 policies<br/>RPC get_question_aggregates")]
     B --> SA --> DB
     B -.->|"anon key + RLS"| DB
 ```
 
-### 🛡️ Security (berlapis)
+### Security (berlapis)
 
 | Layer | Implementasi |
 |---|---|
@@ -81,12 +81,22 @@ flowchart LR
 
 ---
 
-## 🔒 Tentang Source Code
+## English
+
+**Kuis-Kuy** is a survey platform wrapped in an 8-bit RPG. Respondents answer questionnaires as quests, with a desktop and mobile layout built around that theme.
+
+It keeps the data collection serious while removing the boredom that makes people abandon long surveys.
+
+The source code is not published; this repository documents the product.
+
+---
+
+## Tentang Source Code
 
 Repository ini adalah **showcase** — dokumentasi produk, bukan kode sumber.
 Source code Kuis-Kuy tidak dipublikasikan dan semua hak dilindungi. Lihat [`LICENSE`](LICENSE).
 
-> 💬 Demo, kolaborasi, atau lisensi? Hubungi [Kandar Lubis](https://github.com/kandarlubis31).
+> Demo, kolaborasi, atau lisensi? Hubungi [Kandar Lubis](https://github.com/kandarlubis31).
 
 ---
 
